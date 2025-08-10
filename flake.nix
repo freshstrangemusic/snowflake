@@ -19,5 +19,12 @@
           defaultSystems = import systems;
         }
       );
+
+      templates = {
+        default = {
+          path = ./templates/default;
+          description = "A flake using forEachDefaultSystem";
+        };
+      };
     };
 }
